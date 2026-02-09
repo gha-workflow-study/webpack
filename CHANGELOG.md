@@ -1,5 +1,11 @@
 # webpack
 
+## 5.105.1
+
+### Patch Changes
+
+- Fix VirtualUrlPlugin Windows compatibility by sanitizing cache keys and filenames. Cache keys now use `toSafePath` to replace colons (`:`) with double underscores (`__`) and sanitize other invalid characters, ensuring compatibility with Windows filesystem restrictions. (by [@xiaoxiaojx](https://github.com/xiaoxiaojx) in [#20424](https://github.com/webpack/webpack/pull/20424))
+
 ## 5.105.0
 
 ### Minor Changes
